@@ -1,0 +1,36 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> letters = 'abcdefghijklmnopqrstuvmxyz'
+>>> letters[0]
+'a'
+>>> letters[1]
+'b'
+>>> letters[-1]
+'z'
+>>> letters[-2]
+'y'
+>>> letters[25]
+'z'
+>>> letters[100]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> letters[:]
+'abcdefghijklmnopqrstuvmxyz'
+>>> letters
+'abcdefghijklmnopqrstuvmxyz'
+>>> letters[20:]
+'uvmxyz'
+>>> letters[10:]
+'klmnopqrstuvmxyz'
+>>> letters[12:15]
+'mno'
+>>> letters[-3:]
+'xyz'
+>>> letters[-1::-1]
+'zyxmvutsrqponmlkjihgfedcba'
+>>> letters[::-1]
+'zyxmvutsrqponmlkjihgfedcba'
+>>>

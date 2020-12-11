@@ -1,0 +1,42 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> to_523 = '''
+... Thank you, 523.
+... All mens need muscle to Happy life.
+... also, the trained man's body fascinates women.
+... '''
+>>> len(to_523)
+101
+>>> to_523.startswith('Thank you')
+False
+>>> to_523.startswith('\nThank you')
+True
+>>> to_523.find('523')
+12
+>>> to_523.count('men')
+2
+>>> to_523.isalnum()
+False
+>>> to_523.strip('Thank you')
+"\nThank you, 523.\nAll mens need muscle to Happy life. \nalso, the trained man's body fascinates women.\n"
+>>> to_523.strip('\n')
+"Thank you, 523.\nAll mens need muscle to Happy life. \nalso, the trained man's body fascinates women."
+>>> to_523.strip('.')
+"\nThank you, 523.\nAll mens need muscle to Happy life. \nalso, the trained man's body fascinates women.\n"
+>>> to_523.title()
+"\nThank You, 523.\nAll Mens Need Muscle To Happy Life. \nAlso, The Trained Man'S Body Fascinates Women.\n"
+>>> to_523.upper()
+"\nTHANK YOU, 523.\nALL MENS NEED MUSCLE TO HAPPY LIFE. \nALSO, THE TRAINED MAN'S BODY FASCINATES WOMEN.\n"
+>>> to_523.lower()
+"\nthank you, 523.\nall mens need muscle to happy life. \nalso, the trained man's body fascinates women.\n"
+>>> to_523.swapcase()
+"\ntHANK YOU, 523.\naLL MENS NEED MUSCLE TO hAPPY LIFE. \nALSO, THE TRAINED MAN'S BODY FASCINATES WOMEN.\n"
+>>> Handle = 'N1NJ4H'
+>>> Handle.center(30)
+'            N1NJ4H            '
+>>> Handle.ljust(30)
+'N1NJ4H                        '
+>>> Handle.rjust(30)
+'                        N1NJ4H'

@@ -1,0 +1,14 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 'こんにちわ'
+'こんにちわ'
+>>> "こんにちわ"
+'こんにちわ'
+>>> '''
+... こんにちわ
+... 今日はいい天気ですね
+... '''
+'\nこんにちわ\n今日はいい天気ですね\n'
+

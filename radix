@@ -1,0 +1,12 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 10
+10
+>>> 0b10
+2
+>>> 0o10
+8
+>>> 0x10
+16

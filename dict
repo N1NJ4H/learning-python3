@@ -1,0 +1,65 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> bierce = {
+... "day": "A period of twenty-four hours, mostly misspent",
+... "postive": "Mistaken at the top of one's voice",
+... "misfortune": "The kind of tortune that never misses"
+... }
+>>> bierce
+{'day': 'A period of twenty-four hours, mostly misspent', 'postive': "Mistaken at the top of one's voice", 'misfortune': 'The kind of tortune that never misses'}
+>>> lol = [ ['a', 'b'], ['c', 'd'], ['e', 'f'] ]
+>>> dict(lol)
+{'a': 'b', 'c': 'd', 'e': 'f'}
+>>> lot = [ ('a', 'b'), ('c', 'd'), ('e', 'f') ]
+>>> dict(lot)
+{'a': 'b', 'c': 'd', 'e': 'f'}
+>>> tol = ( ['a', 'b'], ['c', 'd'], ['e', 'f'] )
+>>> dict(tol)
+{'a': 'b', 'c': 'd', 'e': 'f'}
+>>> los = [ 'ab', 'cd', 'ef' ]
+>>> dict(los)
+{'a': 'b', 'c': 'd', 'e': 'f'}
+>>> tos = ( 'ab', 'cd', 'ef' )
+>>> dict(tos)
+{'a': 'b', 'c': 'd', 'e': 'f'}
+>>> bierce
+{'day': 'A period of twenty-four hours, mostly misspent', 'postive': "Mistaken at the top of one's voice", 'misfortune': 'The kind of tortune that never misses'}
+>>> del bierce['day']
+>>> bierce
+{'postive': "Mistaken at the top of one's voice", 'misfortune': 'The kind of tortune that never misses'}
+>>> bierce.clear()
+>>> bierce
+{}
+>>>
+>>> pythons = {
+... 'Chapman': 'Graham',
+... 'Cleese': 'John',
+... 'Gilliam': 'Terry',
+... 'Idle': 'Eric',
+... 'Jones': 'Terry',
+... 'Plain': 'Michael',
+... }
+>>> pythons
+{'Chapman': 'Graham', 'Cleese': 'John', 'Gilliam': 'Terry', 'Idle': 'Eric', 'Jones': 'Terry', 'Plain': 'Michael'}
+>>> others = {
+... 'Marx': 'Groucho',
+... 'Howard': 'Moe'
+... }
+>>> others
+{'Marx': 'Groucho', 'Howard': 'Moe'}
+>>> pythons.update(others)
+>>> pythons
+{'Chapman': 'Graham', 'Cleese': 'John', 'Gilliam': 'Terry', 'Idle': 'Eric', 'Jones': 'Terry', 'Plain': 'Michael', 'Marx': 'Groucho', 'Howard': 'Moe'}
+>>> 'Chapman' in pythons
+True
+>>> 'anonymous' in pythons
+False
+>>> pythons.keys()
+dict_keys(['Chapman', 'Cleese', 'Gilliam', 'Idle', 'Jones', 'Plain', 'Marx', 'Howard'])
+>>> pythons.values()
+dict_values(['Graham', 'John', 'Terry', 'Eric', 'Terry', 'Michael', 'Groucho', 'Moe'])
+>>> pythons.items()
+dict_items([('Chapman', 'Graham'), ('Cleese', 'John'), ('Gilliam', 'Terry'), ('Idle', 'Eric'), ('Jones', 'Terry'), ('Plain', 'Michael'), ('Marx', 'Groucho'), ('Howard', 'Moe')])
+

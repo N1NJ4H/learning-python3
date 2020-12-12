@@ -1,0 +1,17 @@
+>>> days = ['Monday', 'Tuesday', 'Wednesday']
+>>> fruits = ['banana', 'orange', 'peach']
+>>> drinks = ['coffee', 'tea', 'beer']
+>>> desserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
+>>> for day, fruit, drink, dessert in zip(days, fruits, drinks, desserts):                                                                 
+...      print(day, ": drink", drink, "- eat", fruit, "- enjoy", dessert) 
+...
+Monday : drink coffee - eat banana - enjoy tiramisu
+Tuesday : drink tea - eat orange - enjoy ice cream
+Wednesday : drink beer - eat peach - enjoy pie
+>>> english = "Monday", "Tuesday", "Wednesday"
+>>> french = 'Lundi', 'Mardi', 'Mercredi'
+>>> list(zip(english,french))
+[('Monday', 'Lundi'), ('Tuesday', 'Mardi'), ('Wednesday', 'Mercredi')]
+>>> dict(zip(english,french))
+{'Monday': 'Lundi', 'Tuesday': 'Mardi', 'Wednesday': 'Mercredi'}
+

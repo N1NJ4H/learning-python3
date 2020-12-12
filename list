@@ -1,0 +1,92 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> empty_list = []
+>>> weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> weekdays
+['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> another_empty_list = list()
+>>> another_empty_list
+[]
+>>> empty_list
+[]
+>>> list('cat')
+['c', 'a', 't']
+>>> a_tuple = ('a', 'b', 'c')
+>>> a_tuple
+('a', 'b', 'c')
+>>> list(a_tuple)
+['a', 'b', 'c']
+>>> '1/6/1952'.split('/')
+['1', '6', '1952']
+>>> weekdays[2]
+'Wednesday'
+>>> weekdays[-1]
+'Fraiday'
+>>> alphabet = ['a','b','c']
+>>> nihongo = ['あ', 'い', 'う']
+>>> all = [alphabet, nihongo]
+>>> all
+[['a', 'b', 'c'], ['あ', 'い', 'う']]
+>>> all[1][0]
+'あ'
+>>> all[1][0] = '置換'
+>>> all[1][0]
+'置換'
+>>> all
+[['a', 'b', 'c'], ['置換', 'い', 'う']]
+>>> all.append('追加')
+>>> all
+[['a', 'b', 'c'], ['置換', 'い', 'う'], '追加']
+>>> all.extend(weekdays)
+>>> all
+[['a', 'b', 'c'], ['置換', 'い', 'う'], '追加', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> all.insert(0, '追加')
+>>> all
+['追加', ['a', 'b', 'c'], ['置換', 'い', 'う'], '追加', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> all.del(4)
+  File "<stdin>", line 1
+    all.del(4)
+          ^
+SyntaxError: invalid syntax
+>>> del all[4]
+>>> all
+['追加', ['a', 'b', 'c'], ['置換', 'い', 'う'], '追加', 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> del all[3]
+>>> all
+['追加', ['a', 'b', 'c'], ['置換', 'い', 'う'], 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> all.remove('追加')
+>>> all
+[['a', 'b', 'c'], ['置換', 'い', 'う'], 'Tuesday', 'Wednesday', 'Thursday', 'Fraiday']
+>>> all.pop()
+'Fraiday'
+>>> all
+[['a', 'b', 'c'], ['置換', 'い', 'う'], 'Tuesday', 'Wednesday', 'Thursday']
+>>> all.index('い')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'い' is not in list
+>>> all.index('Tuesday')
+2
+>>> 'い' in all
+False
+>>> 'Tuesday' in all
+True
+>>> all.count('Tuesday')
+1
+>>> all.count('Friday')
+0
+>>> ', '.join(all)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sequence item 0: expected str instance, list found
+>>> ', '.join(all[0])
+'a, b, c'
+>>> sorted(all[0])
+['a', 'b', 'c']
+>>> all[0].sort(reverse=True)
+>>> all
+[['c', 'b', 'a'], ['置換', 'い', 'う'], 'Tuesday', 'Wednesday', 'Thursday']
+>>> len(all)
+5

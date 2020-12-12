@@ -1,0 +1,46 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> disaster = True
+>>> if disaster:
+...     print("Woe!")
+... else:
+...     print("Whee!")
+...
+Woe!
+>>> furry = True
+>>> small = True
+>>> if furry:
+...     if small:
+...             print("It's a cat.")
+...     else:
+...             print("it's a bear!")
+... else:
+...     if small:
+...             print("it's a shink!")
+...     else:
+...             print("It's a human. or a hairless bear.")
+...
+It's a cat.
+>>> color = "puce"
+>>> if color == "red":
+...     print("It's a tomato")
+... elif color == "green":
+...     print("It's a green pepper")
+... elif color == "bee purple":
+...     print("I don't know what it is, but only bees can see it")
+... else:
+...     print("I've neevr heard of the color", color)
+...
+I've neevr heard of the color puce
+>>> x = 7
+>>> x == 5
+False
+>>> x == 7
+True
+>>> x < 5
+False
+>>> x < 10
+True
+

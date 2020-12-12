@@ -1,0 +1,33 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> empty_tuple = ()
+>>> empty_tuple
+()
+>>> one_tuple = 'aaa',
+>>> one_tuple
+('aaa',)
+>>> one_tuple= 'a', 'a', 'a'
+>>> one_tuple
+('a', 'a', 'a')
+>>> one_tuple = 'a', 'b', 'c'
+>>> a,b,c = one_tuple
+>>> a
+'a'
+>>> v
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'v' is not defined
+>>> b
+'b'
+>>> c
+'c'
+>>> a,b = b,a
+>>> a
+'b'
+>>> b
+'a'
+>>> one_list = ['a', 'b', 'c']
+>>> tuple(one_list)
+('a', 'b', 'c')

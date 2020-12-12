@@ -60,4 +60,31 @@ Type "help", "copyright", "credits" or "license" for more information.
 2 2
 3 1
 3 2
+>>> letter_count = {letter: word.count(letter) for letter in word}
+>>> letter_count
+{'l': 1, 'e': 2, 't': 2, 'r': 1, 's': 1}
+>>> word = 'letters'
+>>> letter_counts = {letter: word.count(letter) for letter in set(word)}
+>>> letter_counts
+{'l': 1, 't': 2, 'e': 2, 's': 1, 'r': 1}
+>>> a_set = {number for number in range(1, 6) if number % 3 == 1}
+>>> a_set
+{1, 4}
+>>> a_set = {number for number in range(1, 6) if number % 3 == 1}
+>>> a_set
+{1, 4}
+>>> number_thing = (number for number in range(1, 6))
+>>> type(number_thing)
+<class 'generator'>
+>>> for number in number_thing:
+...     print(number)
+...
+1
+2
+3
+4
+5
+>>> number_list = list(number_thing)
+>>> number_list
+[]
 

@@ -1,0 +1,73 @@
+n1nj4h@n1nj4h:~$ python
+Python 3.7.2 (default, Nov  2 2020, 21:05:46)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> animal = 'fruitbat'
+>>> def print_global():
+...     print('inside print_global:', animal)
+...
+>>> print('at the top level:', animal)
+at the top level: fruitbat
+>>> print_global()
+inside print_global: fruitbat
+>>> def change_and_print_global():
+...     print('inside change_and_print_global:', animal)
+...     animal = 'wombat'
+...     print('after the change:', animal)
+...
+>>> change_and_print_global()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in change_and_print_global
+UnboundLocalError: local variable 'animal' referenced before assignment
+>>> animal = 'fruitbat'
+>>> def change_local():
+...     animal = 'wombat'
+...     print('inside change_local:', animal, id(animal))
+...
+>>> change_local()
+inside change_local: wombat 140156917580104
+>>> animal
+'fruitbat'
+>>> id(animal)
+140156918160752
+>>> animal = 'fruitbat'
+>>> def change_and_print_global():
+...     global animal
+...     animal = 'wombat'
+...     print('inside change_and_print_global:', animal)
+...
+>>> animal
+'fruitbat'
+>>> change_and_print_global()
+inside change_and_print_global: wombat
+>>> animal
+'wombat'
+>>> animal = 'fruitbat'
+>>> def change_local():
+...     animal = 'wombat' #local
+...     print('locals:', locals())
+...
+>>> animal
+'fruitbat'
+>>> change_local()
+locals: {'animal': 'wombat'}
+>>> print('globals:', globals())
+globals: {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'animal': 'fruitbat', 'change_local': <function change_local at 0x7f69dce25378>}
+>>> animal
+'fruitbat'
+>>> def amazing():
+...     '''
+...     これは素晴らしい関数だ
+...     もう一度見る？
+...     '''
+...     print('この関数の名前:', amazing.__name__)
+...     print('docstring:', amazing.__doc__)
+...
+>>> amazing()
+この関数の名前: amazing
+docstring:
+        これは素晴らしい関数だ
+        もう一度見る？
+
+
